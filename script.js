@@ -53,7 +53,7 @@ document.getElementById('closeModal').addEventListener('click', closeModal);
 modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
 document.getElementById('redeemBtn').addEventListener('click', () => {
   if (!currentVoucher) return;
-  redeemNote.textContent = 'Voucher claimed! Tell your girl when you want to use it. ♡';
+  redeemNote.textContent = 'Voucher claimed! Tell me when you want to use it. ♡';
   document.getElementById('redeemBtn').textContent = 'Claimed with love ✓';
 });
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeModal(); });
